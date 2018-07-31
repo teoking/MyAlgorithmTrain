@@ -29,58 +29,82 @@ public class Main {
         // ================= 代码实现开始 =================
 
         /* 请在这里定义你需要的全局变量 */
-        static final int N = 11;
+        static final int N = 100001;
         Node[] tree = new Node[N];
 
         // 根节点及节点总数
         int root, count;
 
-        // 在以x为根的树中插入一个数字v
-        // v: 待插入节点的值
-        // x: 待插入节点
+        // 将vPos位置的Node v插入到树中
+        // v: 待插入节点
+        // vPos: 待插入节点在数组中的位置
         // return x
-        int insert(int v, int root) {
-            Node rootNode = tree[root];
-            if (rootNode == null) {
-                Node n = new Node();
-                n.val = v;
-                tree[root] = n;
-                count++;
-                return root;
-            }
-
-            return insert(v, rootNode, root);
-        }
-
-        // 插入节点到tree
-        int insert(int v, Node rootNode, int root) {
-            if (root == 0) {
-                Node node = new Node();
-                node.val = v;
-
-            }
-
-            if (v < rootNode.val) {
-                insert(v, tree[rootNode.left], rootNode.left);
+        int insert(Node v, int vPos, Node rootNode) {
+            if (v.val < rootNode.val) {
+                if (rootNode.left != 0) {
+                    insert(v, vPos, tree[rootNode.left]);
+                } else {
+                    rootNode.left = vPos;
+                }
             } else {
-                insert(v, tree[rootNode.right], rootNode.right);
+                if (rootNode.right != 0) {
+                    insert(v, vPos, tree[rootNode.right]);
+                } else {
+                    rootNode.right = vPos;
+                }
             }
 
-            return root;
+            return 0;
         }
 
-        // 求以x为根的二叉树的前序遍历
+        void insertWithSequence(List<Integer> sequence) {
+            root = count = 0;
+
+            // insert root node
+            Node rootNode = new Node();
+            rootNode.val = sequence.get(0);
+            tree[count++] = rootNode;
+
+            // insert others, start from root node
+            for (int i = 1; i < sequence.size(); ++i) {
+                Node n = new Node();
+                n.val = sequence.get(i);
+                // add node to tree array
+                tree[count++] = n;
+                insert(n, i, rootNode);
+            }
+        }
+
+        // 求以x为根的二叉树的前序遍历 (Preorder Tranversal: DLR)
+        // 访问顺序：visit root, DLR left, DLR right
         // x: 当前节点
         // ans: 结果数组
         void dlr(int x, List<Integer> ans) {
-
+            Node node = tree[x];
+            // visit node
+            ans.add(node.val);
+            if (node.left != 0) {
+                dlr(node.left, ans);
+            }
+            if (node.right != 0) {
+                dlr(node.right, ans);
+            }
         }
 
-        // 求以x为根的二叉树的后序遍历
+        // 求以x为根的二叉树的后序遍历 (Postorder Traversal: LRD)
+        // 访问顺序：LRD left, LRD right, visit root
         // x: 当前节点
         // ans: 结果数组
         void lrd(int x, List<Integer> ans) {
-
+            Node node = tree[x];
+            if (node.left != 0) {
+                lrd(node.left, ans);
+            }
+            if (node.right != 0) {
+                lrd(node.right, ans);
+            }
+            // visit node
+            ans.add(node.val);
         }
 
         // 给定一个1到n的排列，依次插入到二叉树中，返回前序遍历和后序遍历
@@ -91,9 +115,7 @@ public class Main {
             /* 请在这里设计你的算法 */
             root = count = 0;
 
-            for (int i = 0; i < sequence.size(); ++i) {
-                insert(sequence.get(i), root);
-            }
+            insertWithSequence(sequence);
 
             List<Integer> ans = new ArrayList<>();
             dlr(root, ans);
