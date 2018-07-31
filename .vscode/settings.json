@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "__bit_reference": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "deque": "cpp",
+        "future": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    }
+}
