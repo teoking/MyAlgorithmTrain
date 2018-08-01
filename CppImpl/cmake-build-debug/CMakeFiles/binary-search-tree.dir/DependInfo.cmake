@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/binary-search-tree/Main.cpp" "/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/binary-search-tree.dir/binary-search-tree/Main.cpp.o"
+  "/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/binary-search-tree/Main.cpp" "/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/binary-search-tree.dir/binary-search-tree/Main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

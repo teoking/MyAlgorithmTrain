@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/number-box/Main.cpp" "/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/number-box.dir/number-box/Main.cpp.o"
+  "/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/number-box/Main.cpp" "/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/number-box.dir/number-box/Main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

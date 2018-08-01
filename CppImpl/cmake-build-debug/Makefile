@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl
+CMAKE_SOURCE_DIR = /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,19 @@ number-box: cmake_check_build_system
 number-box/fast:
 	$(MAKE) -f CMakeFiles/number-box.dir/build.make CMakeFiles/number-box.dir/build
 .PHONY : number-box/fast
+
+#=============================================================================
+# Target rules for targets named re-encode
+
+# Build rule for target.
+re-encode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 re-encode
+.PHONY : re-encode
+
+# fast build rule for target.
+re-encode/fast:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/build
+.PHONY : re-encode/fast
 
 #=============================================================================
 # Target rules for targets named CppImpl
@@ -230,6 +243,33 @@ number-box/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/number-box.dir/build.make CMakeFiles/number-box.dir/number-box/Main.cpp.s
 .PHONY : number-box/Main.cpp.s
 
+re-encode/Main.o: re-encode/Main.cpp.o
+
+.PHONY : re-encode/Main.o
+
+# target to build an object file
+re-encode/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/re-encode/Main.cpp.o
+.PHONY : re-encode/Main.cpp.o
+
+re-encode/Main.i: re-encode/Main.cpp.i
+
+.PHONY : re-encode/Main.i
+
+# target to preprocess a source file
+re-encode/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/re-encode/Main.cpp.i
+.PHONY : re-encode/Main.cpp.i
+
+re-encode/Main.s: re-encode/Main.cpp.s
+
+.PHONY : re-encode/Main.s
+
+# target to generate assembly for a file
+re-encode/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/re-encode/Main.cpp.s
+.PHONY : re-encode/Main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,6 +280,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... binary-search-tree"
 	@echo "... number-box"
+	@echo "... re-encode"
 	@echo "... CppImpl"
 	@echo "... binary-search-tree/Main.o"
 	@echo "... binary-search-tree/Main.i"
@@ -250,6 +291,9 @@ help:
 	@echo "... number-box/Main.o"
 	@echo "... number-box/Main.i"
 	@echo "... number-box/Main.s"
+	@echo "... re-encode/Main.o"
+	@echo "... re-encode/Main.i"
+	@echo "... re-encode/Main.s"
 .PHONY : help
 
 

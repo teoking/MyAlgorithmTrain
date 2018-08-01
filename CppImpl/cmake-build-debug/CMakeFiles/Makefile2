@@ -59,10 +59,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl
+CMAKE_SOURCE_DIR = /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/binary-search-tree.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cma
 CMakeFiles/binary-search-tree.dir/all:
 	$(MAKE) -f CMakeFiles/binary-search-tree.dir/build.make CMakeFiles/binary-search-tree.dir/depend
 	$(MAKE) -f CMakeFiles/binary-search-tree.dir/build.make CMakeFiles/binary-search-tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target binary-search-tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target binary-search-tree"
 .PHONY : CMakeFiles/binary-search-tree.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/binary-search-tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/binary-search-tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/binary-search-tree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/binary-search-tree.dir/rule
 
 # Convenience name for target.
@@ -108,7 +108,7 @@ clean: CMakeFiles/binary-search-tree.dir/clean
 CMakeFiles/number-box.dir/all:
 	$(MAKE) -f CMakeFiles/number-box.dir/build.make CMakeFiles/number-box.dir/depend
 	$(MAKE) -f CMakeFiles/number-box.dir/build.make CMakeFiles/number-box.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target number-box"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target number-box"
 .PHONY : CMakeFiles/number-box.dir/all
 
 # Include target in all.
@@ -118,9 +118,9 @@ all: CMakeFiles/number-box.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/number-box.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/number-box.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/number-box.dir/rule
 
 # Convenience name for target.
@@ -139,13 +139,50 @@ clean: CMakeFiles/number-box.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/re-encode.dir
+
+# All Build rule for target.
+CMakeFiles/re-encode.dir/all:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/depend
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target re-encode"
+.PHONY : CMakeFiles/re-encode.dir/all
+
+# Include target in all.
+all: CMakeFiles/re-encode.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/re-encode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/re-encode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/re-encode.dir/rule
+
+# Convenience name for target.
+re-encode: CMakeFiles/re-encode.dir/rule
+
+.PHONY : re-encode
+
+# clean rule for target.
+CMakeFiles/re-encode.dir/clean:
+	$(MAKE) -f CMakeFiles/re-encode.dir/build.make CMakeFiles/re-encode.dir/clean
+.PHONY : CMakeFiles/re-encode.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/re-encode.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/CppImpl.dir
 
 # All Build rule for target.
 CMakeFiles/CppImpl.dir/all:
 	$(MAKE) -f CMakeFiles/CppImpl.dir/build.make CMakeFiles/CppImpl.dir/depend
 	$(MAKE) -f CMakeFiles/CppImpl.dir/build.make CMakeFiles/CppImpl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CppImpl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CppImpl"
 .PHONY : CMakeFiles/CppImpl.dir/all
 
 # Include target in all.
@@ -155,9 +192,9 @@ all: CMakeFiles/CppImpl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CppImpl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CppImpl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CppImpl.dir/rule
 
 # Convenience name for target.

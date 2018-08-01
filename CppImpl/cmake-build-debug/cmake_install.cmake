@@ -1,4 +1,4 @@
-# Install script for directory: /Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl
+# Install script for directory: /Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/teoking/Documents/DSA/MyAlgorithmTrain/CppImpl/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
