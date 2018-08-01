@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leeco/Documents/MyProject/MyAlgorithmTrain/CppImpl/NumberBox/Main.cpp
+bits/stdc++.h
+-
+
