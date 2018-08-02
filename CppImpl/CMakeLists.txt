@@ -14,3 +14,6 @@ add_executable(binary-search-tree binary-search-tree/Main.cpp)
 
 # Re-Encode
 add_executable(re-encode re-encode/Main.cpp)
+
+# Score sort
+add_executable(score-sort score-sort/Main.cpp)
