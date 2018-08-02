@@ -26,6 +26,23 @@ public class Main {
         // ================= 代码实现开始 =================
 
         /* 请在这里定义你需要的全局变量 */
+        final int N = 3000005;
+
+        // Father：每个节点的父亲节点
+        int[] Father = new int[N];
+        // Rank: 节点的秩
+        int[] Rank = new int[N];
+
+        // 查找节点x所在集合的根
+        // x：节点x
+        // 返回值：根
+        int find(int x) {
+            if (Father[x] == x) {
+                return x;
+            } else {
+                return find(Father[x]);
+            }
+        }
 
         // 给定n个变量以及m个约束，判定是否能找出一种赋值方案满足这m个约束条件
         // n：如题意
@@ -36,6 +53,43 @@ public class Main {
         // 返回值：若能找出一种方案，返回"Yes"；否则返回"No"（不包括引号）。
         String getAnswer(int n, int m, List<Integer> A, List<Integer> B, List<Integer> E) {
             /* 请在这里设计你的算法 */
+            // 初始化
+            for (int i = 1; i <= n; ++i) {
+                Father[i] = i;
+                Rank[i] = 0;
+            }
+
+            // swap?
+            for (int i = 1; i < m; ++i) {
+                if (E.get(i) == 0) {
+                    Collections.swap(E, i, m - 1);
+                    Collections.swap(A, i, m - 1);
+                    Collections.swap(B, i, m - 1);
+                }
+            }
+
+            for (int i = 0; i < m; ++i) {
+                int setA = find(A.get(i));  // 找到A[i]所在集合的根
+                int setB = find(B.get(i));  // 找到B[i]所在集合的根
+                if (E.get(i) == 0) {
+                    if (setA == setB)
+                        return "No";
+                } else {
+                    // Merge
+                    // 不在同一集合时合并
+                    if (setA != setB) {
+                        if (Rank[setA] < Rank[setB]) {
+                            Father[setA] = setB;
+                        } else if (Rank[setA] > Rank[setB]) {
+                            Father[setB] = setA;
+                        } else {
+                            Father[setB] = setA;
+                            Rank[setA] = Rank[setA] + 1;
+                        }
+                    }
+                }
+            }
+            return "Yes";
         }
 
         // ================= 代码实现结束 =================
