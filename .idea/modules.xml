@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/numberbox/numberbox.iml" filepath="$PROJECT_DIR$/numberbox/numberbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/re-encode/re-encode.iml" filepath="$PROJECT_DIR$/re-encode/re-encode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/road-upgrade/road-upgrade.iml" filepath="$PROJECT_DIR$/road-upgrade/road-upgrade.iml" />
       <module fileurl="file://$PROJECT_DIR$/score-sort/score-sort.iml" filepath="$PROJECT_DIR$/score-sort/score-sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
     </modules>

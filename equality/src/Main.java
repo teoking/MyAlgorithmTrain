@@ -37,11 +37,11 @@ public class Main {
         // x：节点x
         // 返回值：根
         int find(int x) {
-            if (Father[x] == x) {
-                return x;
-            } else {
-                return find(Father[x]);
+            // 路径压缩
+            if (Father[x] != x) {
+                Father[x] = find(Father[x]);
             }
+            return Father[x];
         }
 
         // 给定n个变量以及m个约束，判定是否能找出一种赋值方案满足这m个约束条件
@@ -60,11 +60,19 @@ public class Main {
             }
 
             // swap?
-            for (int i = 1; i < m; ++i) {
-                if (E.get(i) == 0) {
-                    Collections.swap(E, i, m - 1);
-                    Collections.swap(A, i, m - 1);
-                    Collections.swap(B, i, m - 1);
+            int last = 0;
+            for (int i = 0; i < m; ++i) {
+//                if (E.get(i) == 0) {
+//                    Collections.swap(E, i, m - 1);
+//                    Collections.swap(A, i, m - 1);
+//                    Collections.swap(B, i, m - 1);
+//                }
+                // 提前操作1表达式到0之前
+                if (E.get(i) == 1) {
+                    Collections.swap(E, i, last);
+                    Collections.swap(A, i, last);
+                    Collections.swap(B, i, last);
+                    last++;
                 }
             }
 
@@ -77,6 +85,7 @@ public class Main {
                 } else {
                     // Merge
                     // 不在同一集合时合并
+                    // 启发式合并
                     if (setA != setB) {
                         if (Rank[setA] < Rank[setB]) {
                             Father[setA] = setB;
