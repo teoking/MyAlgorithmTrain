@@ -10,7 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/re-encode/re-encode.iml" filepath="$PROJECT_DIR$/re-encode/re-encode.iml" />
       <module fileurl="file://$PROJECT_DIR$/road-upgrade/road-upgrade.iml" filepath="$PROJECT_DIR$/road-upgrade/road-upgrade.iml" />
       <module fileurl="file://$PROJECT_DIR$/score-sort/score-sort.iml" filepath="$PROJECT_DIR$/score-sort/score-sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sorting/sorting.iml" filepath="$PROJECT_DIR$/sorting/sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools/tools.iml" filepath="$PROJECT_DIR$/tools/tools.iml" />
     </modules>
   </component>
 </project>
