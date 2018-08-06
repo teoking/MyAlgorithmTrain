@@ -10,9 +10,9 @@ public class HeapSort extends SortAlgorithm {
         return list;
     }
 
-    /// map a real number to the smallest leading integer
+    // map a real number to the smallest leading integer
     private int iParent(int i) {
-        return (int) Math.floor((i - 1) / 2);
+        return (int) Math.floor((i - 1) >> 1);
     }
 
     private int iLeftChild(int i) {

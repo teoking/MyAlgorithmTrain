@@ -17,3 +17,6 @@ add_executable(re-encode re-encode/Main.cpp)
 
 # Score sort
 add_executable(score-sort score-sort/Main.cpp)
+
+# Sorting Algorithm
+add_executable(sorting sorting/Main.cpp)
