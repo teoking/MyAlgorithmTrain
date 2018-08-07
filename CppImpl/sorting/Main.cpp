@@ -5,7 +5,7 @@ using namespace std;
 
 /* 请在这里定义你需要的全局变量 */
 int iParent(int i) {
-    return floor((i - 1) >> 1);
+    return static_cast<int>(floor((i - 1) >> 1));
 }
 
 int iLeftChild(int i) {
@@ -16,29 +16,30 @@ int iRightChild(int i) {
     return 2 * i + 2;
 }
 
-void siftDown(vector<int> a, int start, int end) {
+void siftDown(vector<int> &a, int start, int end) {
     int root = start;
 
     while (iLeftChild(root) <= end) {
         int child = iLeftChild(root);
-        int swapVal = root;
+        int __swap = root;
 
-        if (a[swapVal] < a[child]) {
-            swapVal = child;
+        if (a[__swap] < a[child]) {
+            __swap = child;
         }
 
-        if (child + 1 <= end && a[swapVal] < a[child + 1])
-            swapVal = child + 1;
+        if (child + 1 <= end && a[__swap] < a[child + 1])
+            __swap = child + 1;
 
-        if (swapVal == root)
+        if (__swap == root)
             return;
         else {
-            swap(a[root], a[swapVal]);
+            swap(a[root], a[__swap]);
+            root = __swap;
         }
     }
 }
 
-void heapify(int count, vector<int> a) {
+void heapify(int count, vector<int> &a) {
     int start = iParent(count - 1);
 
     while (start >= 0) {
@@ -47,7 +48,7 @@ void heapify(int count, vector<int> a) {
     }
 }
 
-void heapSort(int n, vector<int> a) {
+vector<int> heapSort(int n, vector<int> a) {
     heapify(n, a);
 
     int end = n - 1;
@@ -56,6 +57,7 @@ void heapSort(int n, vector<int> a) {
         end--;
         siftDown(a, 0, end);
     }
+    return a;
 }
 
 // 将给定数组a升序排序
@@ -64,8 +66,7 @@ void heapSort(int n, vector<int> a) {
 // 返回值：排序后的数组
 vector<int> getAnswer(int n, vector<int> a) {
     /* 请在这里设计你的算法 */
-    heapSort(n, a);
-    return a;
+    return heapSort(n, a);
 }
 
 // ================= 代码实现结束 =================

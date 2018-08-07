@@ -1,16 +1,9 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 
     static class Task {
-
-        void solve(int n, List<Integer> list) {
-            heapSort(list, n);
-        }
-
         // map a real number to the smallest leading integer
         private int iParent(int i) {
             return (int) Math.floor((i - 1) / 2);
@@ -81,21 +74,77 @@ public class Main {
                 }
             }
         }
+
+        void solve(InputReader read, PrintWriter pw) {
+            List<Integer> list = new ArrayList<>();
+            int n = read.nextInt();
+            for (int i = 0; i < n; i++) {
+                list.add(read.nextInt());
+            }
+            getAnswer(n, list);
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < n; i++) {
+                sb.append(list.get(i)).append(" ");
+            }
+            pw.println(sb.toString().trim());
+        }
+
+        void getAnswer(int n, List<Integer> list) {
+            heapSort(list, n);
+        }
+    }
+
+    static class InputReader {
+        BufferedReader reader;
+        StringTokenizer tokenizer;
+
+        private InputReader(InputStream stream) {
+            reader = new BufferedReader(new InputStreamReader(stream), 32768);
+            tokenizer = null;
+        }
+
+        private String next() {
+            while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+                try {
+                    tokenizer = new StringTokenizer(reader.readLine());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            return tokenizer.nextToken();
+        }
+
+        private short nextShort() {
+            return Short.parseShort(next());
+        }
+
+        private int nextInt() {
+            return Integer.parseInt(next());
+        }
+
+        private long nextLong() {
+            return Long.parseLong(next());
+        }
+
+        private float nextFloat() {
+            return Float.parseFloat(next());
+        }
+
+        private double nextDouble() {
+            return Double.parseDouble(next());
+        }
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        List<Integer> list = new ArrayList<>();
-        while (scanner.hasNextInt()) {
-            list.add(scanner.nextInt());
-        }
+        InputStream is = System.in;
+        OutputStream out = System.out;
+        InputReader ir = new InputReader(is);
+        PrintWriter pw = new PrintWriter(out);
+
         Task task = new Task();
-        task.solve(n, list);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < n; i++) {
-            sb.append(list.get(i)).append(" ");
-        }
-        System.out.println(sb.toString().trim());
+        task.solve(ir, pw);
+
+        pw.close();
     }
 }
