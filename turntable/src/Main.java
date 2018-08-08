@@ -48,10 +48,10 @@ public class Main {
                     int v = ((u << 1) | i) & allOne;
                     vis[i].set(u, true);
                     // 递归v、加入数字到ans中
-                    // TODO
+                    dfs(v);
+                    ans.append(i);
                 }
             }
-
         }
 
         // 本函数求解大转盘上的数，你需要把大转盘上的数按顺时针顺序返回
