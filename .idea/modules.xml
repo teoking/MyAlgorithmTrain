@@ -5,12 +5,27 @@
       <module fileurl="file://$PROJECT_DIR$/MyAlgorithmTrain.iml" filepath="$PROJECT_DIR$/MyAlgorithmTrain.iml" />
       <module fileurl="file://$PROJECT_DIR$/bst/bst.iml" filepath="$PROJECT_DIR$/bst/bst.iml" />
       <module fileurl="file://$PROJECT_DIR$/chess/chess.iml" filepath="$PROJECT_DIR$/chess/chess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convex-hull/convex-hull.iml" filepath="$PROJECT_DIR$/convex-hull/convex-hull.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cows/cows.iml" filepath="$PROJECT_DIR$/cows/cows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deng-number/deng-number.iml" filepath="$PROJECT_DIR$/deng-number/deng-number.iml" />
       <module fileurl="file://$PROJECT_DIR$/equality/equality.iml" filepath="$PROJECT_DIR$/equality/equality.iml" />
       <module fileurl="file://$PROJECT_DIR$/grouping/grouping.iml" filepath="$PROJECT_DIR$/grouping/grouping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knapsack1/knapsack1.iml" filepath="$PROJECT_DIR$/knapsack1/knapsack1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knapsack2/knapsack2.iml" filepath="$PROJECT_DIR$/knapsack2/knapsack2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/longest-common-subsequence/longest-common-subsequence.iml" filepath="$PROJECT_DIR$/longest-common-subsequence/longest-common-subsequence.iml" />
       <module fileurl="file://$PROJECT_DIR$/lower-bound/lower-bound.iml" filepath="$PROJECT_DIR$/lower-bound/lower-bound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix/matrix.iml" filepath="$PROJECT_DIR$/matrix/matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maximum-clearance/maximum-clearance.iml" filepath="$PROJECT_DIR$/maximum-clearance/maximum-clearance.iml" />
       <module fileurl="file://$PROJECT_DIR$/minimum-swap/minimum-swap.iml" filepath="$PROJECT_DIR$/minimum-swap/minimum-swap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/n-queen/n-queen.iml" filepath="$PROJECT_DIR$/n-queen/n-queen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nearest-point-pair/nearest-point-pair.iml" filepath="$PROJECT_DIR$/nearest-point-pair/nearest-point-pair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/number-triangle/number-triangle.iml" filepath="$PROJECT_DIR$/number-triangle/number-triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/numberbox/numberbox.iml" filepath="$PROJECT_DIR$/numberbox/numberbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/palindromic-substring/palindromic-substring.iml" filepath="$PROJECT_DIR$/palindromic-substring/palindromic-substring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pour-water/pour-water.iml" filepath="$PROJECT_DIR$/pour-water/pour-water.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prefix/prefix.iml" filepath="$PROJECT_DIR$/prefix/prefix.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/randix-sort/randix-sort.iml" filepath="$PROJECT_DIR$/randix-sort/randix-sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/re-encode/re-encode.iml" filepath="$PROJECT_DIR$/re-encode/re-encode.iml" />
       <module fileurl="file://$PROJECT_DIR$/road-upgrade/road-upgrade.iml" filepath="$PROJECT_DIR$/road-upgrade/road-upgrade.iml" />
       <module fileurl="file://$PROJECT_DIR$/score-sort/score-sort.iml" filepath="$PROJECT_DIR$/score-sort/score-sort.iml" />
@@ -18,7 +33,10 @@
       <module fileurl="file://$PROJECT_DIR$/shortest-path/shortest-path.iml" filepath="$PROJECT_DIR$/shortest-path/shortest-path.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting/sorting.iml" filepath="$PROJECT_DIR$/sorting/sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/str-match/str-match.iml" filepath="$PROJECT_DIR$/str-match/str-match.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sub-sequence/sub-sequence.iml" filepath="$PROJECT_DIR$/sub-sequence/sub-sequence.iml" />
       <module fileurl="file://$PROJECT_DIR$/tools/tools.iml" filepath="$PROJECT_DIR$/tools/tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topological-sort/topological-sort.iml" filepath="$PROJECT_DIR$/topological-sort/topological-sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/turntable/turntable.iml" filepath="$PROJECT_DIR$/turntable/turntable.iml" />
     </modules>
   </component>

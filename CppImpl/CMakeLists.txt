@@ -20,3 +20,15 @@ add_executable(score-sort score-sort/Main.cpp)
 
 # Sorting Algorithm
 add_executable(sorting sorting/Main.cpp)
+
+# Card Play
+add_executable(card card/Main.cpp)
+
+# Frog
+add_executable(frog frog/Main.cpp)
+
+# NearestPP
+add_executable(nearest-point-pair nearest-point-pair/Main.cpp)
+
+# Knapsack2
+add_executable(knapsack2 knapsack2/Main.cpp)

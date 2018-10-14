@@ -1,0 +1,10 @@
+5 4
+ab
+abc
+ab
+ba
+bb
+a
+b
+ab
+abc
